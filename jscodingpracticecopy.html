@@ -1,0 +1,38 @@
+<html>
+<head>
+    </head>
+<body>
+   
+    Enter your Name & Enter<input id ="in"onkeypress= "enterKeyPressed(event)"/>
+    <p id = "result" > </p>
+    <p id = "demo" > </p>
+    
+<button id ="clear">reset</button>
+    <script>
+        alert ("Please Enter your Name");
+     
+        
+
+     function enterKeyPressed(event){
+        
+            if (event.keyCode == 13) {let x = document.getElementById('in').value;
+        document.getElementById('result').innerHTML="Welcome"+ x +" ..good to see you here!";
+        }
+            
+        }    
+      document.getElementById("clear").onclick = clear;
+     function clear()
+     {
+         document.getElementById('result').innerHTML="Please Enter your Name";
+         document.getElementById('in').value=null;
+
+         
+         
+     }
+
+   
+</script>
+</body>
+
+
+</html>
